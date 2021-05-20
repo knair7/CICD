@@ -3,7 +3,7 @@ const cds = require("@sap/cds");
 class OpenWeatherApi extends cds.RemoteService {
   async init() {
     this.reject(["CREATE", "UPDATE", "DELETE"], "*");
-    console.log('Enteringdx');
+    console.log('Enteringdxd');
     this.before("READ", "*", (req) => {
       try {
         const queryParams = parseQueryParams(req.query.SELECT);
